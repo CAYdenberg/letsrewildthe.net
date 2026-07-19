@@ -11,7 +11,6 @@ export const vault = await openVault({
 const postSchema = z.object({
   title: z.string().optional(),
   summary: z.string().optional(),
-  content_text: z.string().optional(),
   image: z.string().nullable().optional(),
   banner_image: z.string().nullable().optional(),
   date_published: z.coerce.date(),

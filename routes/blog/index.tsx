@@ -1,12 +1,18 @@
 import { define } from "../../utils.ts";
 import { postModel } from "../../lib/vault.ts";
 import { paginate } from "../../lib/pagination.ts";
+import { Page } from "@/components/Page.tsx";
+import { Paginator } from "@/components/Paginator.tsx";
 
 export const handler = define.handlers({
   async GET(ctx) {
     const allPosts = await postModel.all();
 
-    const sortedPosts = allPosts.slice().sort((a, b) =>
+    console.log(allPosts.map((post) => post.frontmatter.date_published));
+
+    const sortedPosts = allPosts.filter((post) =>
+      !!post.frontmatter.date_published.getTime()
+    ).sort((a, b) =>
       b.frontmatter.date_published.getTime() -
       a.frontmatter.date_published.getTime()
     );
@@ -17,24 +23,43 @@ export const handler = define.handlers({
       paged.params.skip + paged.params.limit,
     );
 
-    return { data: { posts, paged } };
+    return { data: { posts, pagination: paged } };
   },
 });
 
-export default define.page<typeof handler>(function ({ data, url }) {
-  const { paged, posts } = data;
-
-  const title = paged.params.skip ? `Blog (page ${paged.page})` : "Blog";
+export default define.page<typeof handler>(function BlogPage(
+  { url, data },
+) {
+  const { posts, pagination } = data;
 
   return (
-    <ul>
-      {posts.map((post) => (
-        <li key={post.slug}>
-          <a href={`blog/${post.slug}`}>
-            {post.title}
+    <Page url={url} pageTitle="Blog">
+      <div class="container max-w-3xl mx-auto">
+        <h1 class="text-info text-2xl font-bold my-4">
+          Blog
+        </h1>
+
+        <hr className="my-4" />
+
+        {posts.map((post) => (
+          <a key={post.slug} class="block my-2" href={`/blog/${post.slug}`}>
+            <h3 class="text-primary text-xl">{post.title}</h3>
+            <p class="text-sm/tight">{post.frontmatter.summary}</p>
           </a>
-        </li>
-      ))}
-    </ul>
+        ))}
+
+        <hr className="my-4" />
+
+        <Paginator
+          {...pagination}
+          className={{
+            root: "flex flex-row items-center",
+            button: "text-md text-info",
+            disabledButton: "opacity-50",
+            text: "m-0 grow text-center",
+          }}
+        />
+      </div>
+    </Page>
   );
 });
