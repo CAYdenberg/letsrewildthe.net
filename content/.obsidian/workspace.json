@@ -1,0 +1,224 @@
+{
+  "main": {
+    "id": "8e4d48af9631dcd7",
+    "type": "split",
+    "children": [
+      {
+        "id": "db2353917d2c78dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7b808cf4ca2f084c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "We watched the end of a century.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "We watched the end of a century"
+            }
+          },
+          {
+            "id": "9872c64b9e850ac0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "You're wrong about AI.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "You're wrong about AI"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "16ed391a3b4c728f",
+    "type": "split",
+    "children": [
+      {
+        "id": "21e241d59bade93d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9fef917c6a68c79b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8f8ca66ba2ce9748",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "proclivity",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "591993bbe050053c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "694d257b04bd1d4e",
+    "type": "split",
+    "children": [
+      {
+        "id": "bc10d95a6361116c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "380894f8ec05de30",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Why I think differently about LLMs.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Why I think differently about LLMs"
+            }
+          },
+          {
+            "id": "cfd3b64f9dbcc764",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Why I think differently about LLMs.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Why I think differently about LLMs"
+            }
+          },
+          {
+            "id": "66c18eb4bff53049",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7b59b277b4506b09",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Why I think differently about LLMs.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Why I think differently about LLMs"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9872c64b9e850ac0",
+  "lastOpenFiles": [
+    "We watched the end of a century.md",
+    "You're wrong about AI.md",
+    "Will AI replace bullshit jobs?.md",
+    "liberty.jpg",
+    "Generative AI is a filter for other peoples' work.md",
+    "mushrooms1.jpg",
+    "mycelium.jpg",
+    "Do androids dream of violent revolution?.md",
+    "Letter to my dead boomer mom.md",
+    "liberty",
+    "The revolution we deserve, but not the one we need.md",
+    "scerevisiae.jpg",
+    "\"Bullshit Jobs\" in 2025.md",
+    "Link to another post.md",
+    "Punishment_sisyph.jpg",
+    "Why I think differently about LLMs.md",
+    "A page.md",
+    "A folder/A page inside a folder.md",
+    "A folder",
+    "templates/Post.md",
+    "templates/Partial.md",
+    "templates/Page.md",
+    "templates",
+    "neurons.jpg",
+    "forest1.jpg",
+    "Natalie Star 2.mp3",
+    "posts/llms-think-different.md",
+    "posts",
+    "images/scerevisiae.jpg",
+    "images/neurons.jpg",
+    "images/mycelium.jpg",
+    "images",
+    "cron (2).csv",
+    "2025-06-18.md"
+  ]
+}
