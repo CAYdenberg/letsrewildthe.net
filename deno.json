@@ -6,7 +6,7 @@
     "build:app": "vite build",
     "build:content": "deno run -A build.ts",
     "build": "deno task build:app && deno task build:content",
-    "start": "deno serve -A _fresh/server.js",
+    "start": "deno serve -A --port 9000 _fresh/server.js",
     "update": "deno run -A -r jsr:@fresh/update ."
   },
   "lint": {

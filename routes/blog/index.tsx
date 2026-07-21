@@ -8,8 +8,6 @@ export const handler = define.handlers({
   async GET(ctx) {
     const allPosts = await postModel.all();
 
-    console.log(allPosts.map((post) => post.frontmatter.date_published));
-
     const sortedPosts = allPosts.filter((post) =>
       !!post.frontmatter.date_published.getTime()
     ).sort((a, b) =>
