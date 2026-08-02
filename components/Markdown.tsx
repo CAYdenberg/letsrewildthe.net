@@ -121,4 +121,13 @@ export const Markdown: FunctionComponent<Props> = (
 };
 
 // deno-lint-ignore no-explicit-any
-const Shortcodes: Record<string, FunctionComponent<any>> = {};
+const Shortcodes: Record<string, FunctionComponent<any>> = {
+  ["..."]: () => <span>[...]</span>,
+  MastodonEmbed: ({ url }: { url: string }) => {
+    return (
+      <div className="flex flex-row justify-center">
+        <iframe src={`${url}/embed`} className="w-xl h-65" />
+      </div>
+    );
+  },
+};
